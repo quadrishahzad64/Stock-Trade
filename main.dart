@@ -92,16 +92,16 @@ class MyApp extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                        children: [
                          MyCont(text: texts[3],imgUrl: imgUrls[3],contColor: containerColors[3],),
-                         MyContCir(text: texts[4],imgUrl: imgUrls[1],contColor: containerColors[4]),
-                         MyContTri(text: texts[5],imgUrl: imgUrls[2],contColor: containerColors[5])
+                         MyContCir(text: texts[4],imgUrl: imgUrls[4],contColor: containerColors[4]),
+                         MyContTri(text: texts[5],imgUrl: imgUrls[5],contColor: containerColors[5])
                         ]),
                     SizedBox(height: 40,),
                        Row(
                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           MyCont(text: texts[6],imgUrl: imgUrls[6],contColor: containerColors[6],),
-                          MyContCir(text: texts[7],imgUrl: imgUrls[1],contColor: containerColors[7]),
-                          MyContTri(text: texts[8],imgUrl: imgUrls[2],contColor: containerColors[8])
+                          MyContCir(text: texts[7],imgUrl: imgUrls[7],contColor: containerColors[7]),
+                          MyContTri(text: texts[8],imgUrl: imgUrls[8],contColor: containerColors[8])
                           ])
                   ],
                 ),
