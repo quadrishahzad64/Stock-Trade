@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    //Colors.grey.shade500
     final List<String> texts = [
       'MEN',
       'CHILD',
@@ -34,6 +34,19 @@ class MyApp extends StatelessWidget {
       'assets/perfume.jpg',
       'assets/foods.jpg',
     ];
+
+    List<Color> containerColors = [
+      Colors.red,
+      Colors.green,
+      Colors.blue,
+      Colors.yellow,
+      Colors.orange,
+      Colors.purple,
+      Colors.teal,
+      Colors.pink,
+      Colors.brown,
+    ];
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -69,26 +82,26 @@ class MyApp extends StatelessWidget {
                     Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          MyCont(text: texts[0],imgUrl: imgUrls[0]),
-                          MyContCir(text: texts[1],imgUrl: imgUrls[1]),
-                          MyContTri(text: texts[2],imgUrl: imgUrls[2]),
+                          MyCont(text: texts[0],imgUrl: imgUrls[0],contColor: containerColors[0],),
+                          MyContCir(text: texts[1],imgUrl: imgUrls[1],contColor: containerColors[1]),
+                          MyContTri(text: texts[2],imgUrl: imgUrls[2],contColor: containerColors[2])
                                         ]
                                        ),
                     SizedBox(height: 40,),
                     Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                        children: [
-                          MyCont(text: texts[3],imgUrl: imgUrls[3]),
-                          MyContCir(text: texts[4],imgUrl: imgUrls[4]),
-                          MyContTri(text: texts[5],imgUrl: imgUrls[5]),
+                         MyCont(text: texts[3],imgUrl: imgUrls[3],contColor: containerColors[3],),
+                         MyContCir(text: texts[4],imgUrl: imgUrls[1],contColor: containerColors[4]),
+                         MyContTri(text: texts[5],imgUrl: imgUrls[2],contColor: containerColors[5])
                         ]),
                     SizedBox(height: 40,),
                        Row(
                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          MyCont(text: texts[6],imgUrl: imgUrls[6]),
-                          MyContCir(text: texts[7],imgUrl: imgUrls[7]),
-                          MyContTri(text: texts[8],imgUrl: imgUrls[8]),
+                          MyCont(text: texts[6],imgUrl: imgUrls[6],contColor: containerColors[6],),
+                          MyContCir(text: texts[7],imgUrl: imgUrls[1],contColor: containerColors[7]),
+                          MyContTri(text: texts[8],imgUrl: imgUrls[2],contColor: containerColors[8])
                           ])
                   ],
                 ),

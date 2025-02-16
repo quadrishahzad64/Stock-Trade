@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 class MyCont extends StatelessWidget {
   final String text; // Add a parameter for the text
   final String imgUrl;
-  const MyCont({super.key, required this.text,required this.imgUrl});
+  final contColor;
+  const MyCont({super.key, required this.text,required this.imgUrl,required this.contColor});
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 100,
       height: 120,
       decoration: BoxDecoration(
-        color: Colors.grey.shade500,
+        color: contColor,
         borderRadius: BorderRadius.circular(15.0),
         boxShadow: [
           BoxShadow(
@@ -47,7 +48,8 @@ class MyCont extends StatelessWidget {
 class MyContCir extends StatelessWidget {
   final String text; // Add a parameter for the text
   final String imgUrl;
-  const MyContCir({super.key, required this.text,required this.imgUrl});
+  final contColor;
+  const MyContCir({super.key, required this.text,required this.imgUrl,required this.contColor});
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +58,7 @@ class MyContCir extends StatelessWidget {
       height: 120,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.grey.shade500,
+        color: contColor,
         boxShadow: [
           BoxShadow(
             color: Colors.grey.shade900,
@@ -93,7 +95,8 @@ class MyContCir extends StatelessWidget {
 class MyContTri extends StatelessWidget {
   final String text; // Add a parameter for the text
   final String imgUrl;
-  const MyContTri({super.key, required this.text,required this.imgUrl});
+  final contColor;
+  const MyContTri({super.key, required this.text,required this.imgUrl,required this.contColor});
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +105,7 @@ class MyContTri extends StatelessWidget {
         borderRadius: BorderRadius.circular(15.0),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.shade900,
+            color: contColor,
             offset: Offset(4.0, 4.0),
             blurRadius: 15.0,
             spreadRadius: 1.0,
